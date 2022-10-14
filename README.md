@@ -19,13 +19,13 @@ This isn't guaranteed to work if `client.dll` in this repository has not been up
 
 # Alternative Installation
 
-If you do not have python installed you can patch client.dll with [AT4RE patcher](https://github.com/indetectables-net/toolkit/tree/master/toolkit/Patcher/AT4RE%20Patcher). This will automatically patch client.dll x32 and x64 without requiring python.
+If you do not have python installed you can patch client.dll with [AT4RE patcher](https://github.com/indetectables-net/toolkit/tree/master/toolkit/Patcher/AT4RE%20Patcher). This will automatically patch `client.dll` x32 and x64 without requiring python.
 
 Virustotal for patcher: 
 
 1. Extract ScriptEnforcementPatch.7z with the password `123` (patcher has false positives)
 2. Run the x32 or x64 patch as admin.
-3. Click patch. If it asks for client.dll go into `steamapps\common\Garrysmod\bin` and select client.dll, if you are patching x64 then go into `steamapps\common\Garrysmod\bin\win64` and select client64.dll
+3. Click patch. If it asks for client.dll go into `steamapps\common\Garrysmod\bin` and select `client.dll`, if you are patching x64 then go into `steamapps\common\Garrysmod\bin\win64` and select `client.dll`
 4. All done!
 
 # How It Works
