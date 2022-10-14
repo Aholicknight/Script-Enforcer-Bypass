@@ -19,7 +19,7 @@ This isn't guaranteed to work if `client.dll` in this repository has not been up
 
 # Alternative Installation
 
-If you do not have python installed you can patch client.dll with [AT4RE patcher](https://github.com/indetectables-net/toolkit/tree/master/toolkit/Patcher/AT4RE%20Patcher). This will automatically patch `client.dll` x32 and x64 without requiring python.
+If you do not have python installed you can patch client.dll with [dUP2 patcher](https://github.com/indetectables-net/toolkit/tree/master/toolkit/Patcher/dUP). This will automatically patch `client.dll` x32 and x64 without requiring python.
 
 Virustotal for patcher: 
 
