@@ -17,6 +17,17 @@ A Garry's Mod Script Enforcer bypass that I made which patches `client.dll` to a
 
 This isn't guaranteed to work if `client.dll` in this repository has not been updated and patched for a new version of Garry's Mod.
 
+# Alternative Installation
+
+If you do not have python installed you can patch client.dll with the provided [AT4RE patcher](https://github.com/indetectables-net/toolkit/tree/master/toolkit/Patcher/AT4RE%20Patcher). This will automatically patch client.dll x32 and x64 without requiring python.
+
+Virustotal for patcher: 
+
+1. Extract ScriptEnforcementPatch.7z with the password `123` (patcher has false positives)
+2. Run the x32 or x64 patch as admin.
+3. Click patch. If it asks for client.dll go into `steamapps\common\Garrysmod\bin` and select client.dll, if you are patching x64 then go into `steamapps\common\Garrysmod\bin\win64` and select client64.dll
+4. All done!
+
 # How It Works
 
 This NOPs the `JNZ` branch called by `lua_openscript_cl` and adds `mov byte ptr [ecx + b8], 1` (x86) or `mov byte ptr [rcx + 168], 1` (x64) aka byte patch `C681B800000001FF 90 84 01 00 00 5E 5D C3` to the end of the function call to escalate lua execution privileges and change where the file loader searches for your script.
